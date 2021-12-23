@@ -1,0 +1,61 @@
+Scheme Name       : step_2
+Scheme lnL        : -4095.8212280273438
+Scheme BIC        : 10366.1205183
+Number of params  : 280
+Number of sites   : 2359
+Number of subsets : 2
+
+Subset | Best Model | # sites    | subset id                        | Partition names                                                                                     
+1      | HKY+I+X    | 2109       | 9878f531bc2d5ec5ac7dadfc513a0f5e | its, tub, cmd                                                                                       
+2      | K80        | 250        | f898f3abae08a30412ce8a1242bb4f63 | ef                                                                                                  
+
+
+Scheme Description in PartitionFinder format
+Scheme_step_2 = (its, tub, cmd) (ef);
+
+Nexus formatted character sets
+begin sets;
+	charset Subset1 = 809-1347 1348-2359 1-558;
+	charset Subset2 = 559-808;
+	charpartition PartitionFinder = Group1:Subset1, Group2:Subset2;
+end;
+
+
+Nexus formatted character sets for IQtree
+Warning: the models written in the charpartition are just the best model found in this analysis. Not all models are available in IQtree, so you may need to set up specific model lists for your analysis
+
+#nexus
+begin sets;
+	charset Subset1 = 809-1347 1348-2359 1-558;
+	charset Subset2 = 559-808;
+	charpartition PartitionFinder = HKY+I+X:Subset1, K80:Subset2;
+end;
+
+
+RaxML-style partition definitions
+Warning: RAxML allows for only a single model of rate heterogeneity in partitioned analyses. I.e. all partitions must be assigned one of three types of model: No heterogeneity (e.g. GTR); +G (e.g. GTR+G); or +I+G (e.g. GTR+I+G). If the best models for your datasetcontain different types of model for different subsets you will need to decide on the best rate heterogeneity model before you run RAxML. If you prefer to do things more rigorously, you can run separate PartitionFinder analyses for each type of rate heterogenetity Then choose the scheme with the lowest AIC/AICc/BIC score. Note that these re-runs will be quick!
+
+DNA, Subset1 = 809-1347, 1348-2359, 1-558
+DNA, Subset2 = 559-808
+
+
+MrBayes block for partition definitions
+Warning: MrBayes only allows a relatively small collection of models. If any model in your analysis is not one that is included in MrBayes (e.g. by setting nst = 1, 2, or 6 for DNA sequences; or is not in the available list of protein models for MrBayes)then this MrBayes block will just set that model to nst = 6 for DNA, or 'wag' for Protein. Similarly, the only additional parameters that this MrBayes block will include are +I and +G. Other  parameters, such as +F and +X, are ignored. If you want to use this MrBayes block for your analysis, please make sure to check it carefully before you use it we've done our best to make it accurate, but there may be errors that remain!
+
+begin mrbayes;
+
+	charset Subset1 = 809-1347 1348-2359 1-558;
+	charset Subset2 = 559-808;
+
+	partition PartitionFinder = 2:Subset1, Subset2;
+	set partition=PartitionFinder;
+
+	lset applyto=(1) nst=2 rates=propinv;
+	lset applyto=(2) nst=2;
+prset applyto=(2) statefreqpr=fixed(equal);
+
+	prset applyto=(all) ratepr=variable;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all) tratio=(all);
+	unlink brlens=(all);
+
+end;

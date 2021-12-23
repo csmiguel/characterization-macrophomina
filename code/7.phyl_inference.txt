@@ -1,0 +1,10 @@
+#concatenate dna alignments
+/Applications/AMAS.py concat -f phylip -d dna -i data/intermediate/*ind.phy \
+  -p data/intermediate/part -t data/intermediate/concat.phy -u phylip
+
+#reformat partitions for raxml
+cat data/intermediate/part | sed 's|^|DNA, |' > data/intermediate/part_raxml
+
+#run raxml
+raxml -f a -p 1234 -x 2345 -m GTRGAMMA -N 100 -T 2 \
+-s data/intermediate/concat.phy.reduced -n mp_nonDup.tree -q data/intermediate/part_raxml

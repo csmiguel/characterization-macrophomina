@@ -1,0 +1,4 @@
+DNA, Subset1 = 1-558
+DNA, Subset2 = 559-808
+DNA, Subset3 = 809-1347
+DNA, Subset4 = 1348-2359

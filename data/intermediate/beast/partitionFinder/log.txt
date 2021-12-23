@@ -1,0 +1,90 @@
+INFO     | 2021-12-16 16:23:37,629 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2021-12-16 16:23:37,635 | config     | Setting 'alignment' to 'concat_reduced.phy'
+INFO     | 2021-12-16 16:23:37,636 | config     | Setting 'branchlengths' to 'unlinked'
+INFO     | 2021-12-16 16:23:37,636 | parser     | You set 'models' to: beast
+INFO     | 2021-12-16 16:23:37,762 | model_load | This analysis will use the following 40 models of molecular evolution
+INFO     | 2021-12-16 16:23:37,762 | model_load | JC, K80, TRNEF, SYM, HKY, TRN, GTR, HKY+X, TRN+X, GTR+X, JC+G, K80+G, TRNEF+G, SYM+G, HKY+G, TRN+G, GTR+G, HKY+G+X, TRN+G+X, GTR+G+X, JC+I, K80+I, TRNEF+I, SYM+I, HKY+I, TRN+I, GTR+I, HKY+I+X, TRN+I+X, GTR+I+X, JC+I+G, K80+I+G, TRNEF+I+G, SYM+I+G, HKY+I+G, TRN+I+G, GTR+I+G, HKY+I+G+X, TRN+I+G+X, GTR+I+G+X
+INFO     | 2021-12-16 16:23:37,763 | config     | Setting 'model_selection' to 'bic'
+ERROR    | 2021-12-16 16:23:37,767 | parser     | There was a problem loading your .cfg file, please check and try again
+ERROR    | 2021-12-16 16:23:37,767 | parser     | Expected "[schemes]" (at char 387), (line:18, col:1)
+INFO     | 2021-12-16 16:23:37,767 | parser     | It looks like the '[schemes]' option might be missing or in the wrong place. Or perhaps something is wrong in the lines just before the '[schemes]' option is missing. Please double check the configuration file and try again
+ERROR    | 2021-12-16 16:23:37,768 | main       | Failed to run. See previous errors.
+INFO     | 2021-12-16 16:25:31,285 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2021-12-16 16:25:31,291 | config     | Setting 'alignment' to 'concat_reduced.phy'
+INFO     | 2021-12-16 16:25:31,292 | config     | Setting 'branchlengths' to 'unlinked'
+INFO     | 2021-12-16 16:25:31,292 | parser     | You set 'models' to: beast
+INFO     | 2021-12-16 16:25:31,342 | model_load | This analysis will use the following 40 models of molecular evolution
+INFO     | 2021-12-16 16:25:31,343 | model_load | JC, K80, TRNEF, SYM, HKY, TRN, GTR, HKY+X, TRN+X, GTR+X, JC+G, K80+G, TRNEF+G, SYM+G, HKY+G, TRN+G, GTR+G, HKY+G+X, TRN+G+X, GTR+G+X, JC+I, K80+I, TRNEF+I, SYM+I, HKY+I, TRN+I, GTR+I, HKY+I+X, TRN+I+X, GTR+I+X, JC+I+G, K80+I+G, TRNEF+I+G, SYM+I+G, HKY+I+G, TRN+I+G, GTR+I+G, HKY+I+G+X, TRN+I+G+X, GTR+I+G+X
+INFO     | 2021-12-16 16:25:31,344 | config     | Setting 'model_selection' to 'bic'
+ERROR    | 2021-12-16 16:25:31,352 | config     | Clustering methods are only available when using raxml (the --raxml commandline option). Please check and try again. See the manual for more details.
+ERROR    | 2021-12-16 16:25:31,352 | parser     | Invalid option in .cfg file at line:22, column:1
+ERROR    | 2021-12-16 16:25:31,353 | main       | Failed to run. See previous errors.
+INFO     | 2021-12-16 16:26:20,442 | config     | Loading configuration at './partition_finder.cfg'
+INFO     | 2021-12-16 16:26:20,449 | config     | Setting 'alignment' to 'concat_reduced.phy'
+INFO     | 2021-12-16 16:26:20,449 | config     | Setting 'branchlengths' to 'unlinked'
+INFO     | 2021-12-16 16:26:20,449 | parser     | You set 'models' to: beast
+INFO     | 2021-12-16 16:26:20,518 | model_load | This analysis will use the following 40 models of molecular evolution
+INFO     | 2021-12-16 16:26:20,518 | model_load | JC, K80, TRNEF, SYM, HKY, TRN, GTR, HKY+X, TRN+X, GTR+X, JC+G, K80+G, TRNEF+G, SYM+G, HKY+G, TRN+G, GTR+G, HKY+G+X, TRN+G+X, GTR+G+X, JC+I, K80+I, TRNEF+I, SYM+I, HKY+I, TRN+I, GTR+I, HKY+I+X, TRN+I+X, GTR+I+X, JC+I+G, K80+I+G, TRNEF+I+G, SYM+I+G, HKY+I+G, TRN+I+G, GTR+I+G, HKY+I+G+X, TRN+I+G+X, GTR+I+G+X
+INFO     | 2021-12-16 16:26:20,519 | config     | Setting 'model_selection' to 'bic'
+INFO     | 2021-12-16 16:26:20,524 | config     | Setting 'search' to 'greedy'
+INFO     | 2021-12-16 16:26:20,524 | config     | ------------------------ BEGINNING NEW RUN -------------------------------
+INFO     | 2021-12-16 16:26:20,524 | config     | Looking for alignment file './concat_reduced.phy'...
+INFO     | 2021-12-16 16:26:20,529 | threadpool | Using 4 cpus
+INFO     | 2021-12-16 16:26:20,529 | analysis   | Beginning Analysis
+INFO     | 2021-12-16 16:26:20,637 | alignment  | Reading alignment file './concat_reduced.phy'
+INFO     | 2021-12-16 16:26:20,652 | analysis   | Starting tree will be estimated from the data.
+INFO     | 2021-12-16 16:26:20,653 | raxml      | Estimating Maximum Likelihood tree with RAxML fast experimental tree search for ./analysis/start_tree/filtered_source.phy
+INFO     | 2021-12-16 16:26:20,655 | raxml      | Using a separate GTR+G model for each data block
+INFO     | 2021-12-16 16:26:22,106 | raxml      | Estimating GTR+G branch lengths on ML tree using all partitions
+INFO     | 2021-12-16 16:26:22,558 | raxml      | ML topology estimation finished
+INFO     | 2021-12-16 16:26:22,561 | analysis_m | Performing Greedy Analysis
+INFO     | 2021-12-16 16:26:22,562 | analysis_m |    *** Analysing starting scheme ***
+INFO     | 2021-12-16 16:27:04,032 | progress   |       Finished subset 1/4, 25.00 percent done
+INFO     | 2021-12-16 16:27:27,689 | progress   |       Finished subset 2/4, 50.00 percent done
+INFO     | 2021-12-16 16:27:48,254 | progress   |       Finished subset 3/4, 75.00 percent done
+INFO     | 2021-12-16 16:28:07,782 | progress   |       Finished subset 4/4, 100.00 percent done
+INFO     | 2021-12-16 16:28:07,789 | analysis_m |    ***Greedy algorithm step 1***
+INFO     | 2021-12-16 16:28:07,797 | analysis_m |       Analysing 6 new subset pairs
+INFO     | 2021-12-16 16:29:06,079 | progress   |       Finished subset 1/6, 16.67 percent done
+INFO     | 2021-12-16 16:29:53,632 | progress   |       Finished subset 2/6, 33.33 percent done
+INFO     | 2021-12-16 16:30:32,529 | progress   |       Finished subset 3/6, 50.00 percent done
+INFO     | 2021-12-16 16:31:33,262 | progress   |       Finished subset 4/6, 66.67 percent done
+INFO     | 2021-12-16 16:32:05,660 | progress   |       Finished subset 5/6, 83.33 percent done
+INFO     | 2021-12-16 16:32:38,696 | progress   |       Finished subset 6/6, 100.00 percent done
+INFO     | 2021-12-16 16:32:38,697 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-12-16 16:32:38,710 | analysis_m |       Best scheme combines subsets: 'tub' and 'cmd'
+INFO     | 2021-12-16 16:32:38,711 | analysis_m |       The best scheme improves the bic score by 1049.41 to 11363.3
+INFO     | 2021-12-16 16:32:38,713 | analysis_m |    ***Greedy algorithm step 2***
+INFO     | 2021-12-16 16:32:38,714 | analysis_m |       Analysing 2 new subset pairs
+INFO     | 2021-12-16 16:33:42,523 | progress   |       Finished subset 1/2, 50.00 percent done
+INFO     | 2021-12-16 16:34:33,347 | progress   |       Finished subset 2/2, 100.00 percent done
+INFO     | 2021-12-16 16:34:33,348 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-12-16 16:34:33,350 | analysis_m |       Best scheme combines subsets: 'its' and 'tub, cmd'
+INFO     | 2021-12-16 16:34:33,351 | analysis_m |       The best scheme improves the bic score by 997.22 to 10366.1
+INFO     | 2021-12-16 16:34:33,352 | analysis_m |    ***Greedy algorithm step 3***
+INFO     | 2021-12-16 16:34:33,353 | analysis_m |       Analysing 1 new subset pairs
+INFO     | 2021-12-16 16:36:33,244 | progress   |       Finished subset 1/1, 100.00 percent done
+INFO     | 2021-12-16 16:36:33,245 | analysis_m |       Finding the best partitioning scheme
+INFO     | 2021-12-16 16:36:33,247 | analysis_m |       Best scheme combines subsets: 'ef' and 'its, tub, cmd'
+INFO     | 2021-12-16 16:36:33,247 | analysis_m |       The best scheme improves the bic score by 929.72 to 9436.4
+INFO     | 2021-12-16 16:36:33,249 | analysis_m |    Greedy algorithm finished after 4 steps
+INFO     | 2021-12-16 16:36:33,249 | analysis_m |    Best scoring scheme is scheme step_3, with bic score of 9436.403
+INFO     | 2021-12-16 16:36:33,249 | model_util |    Information on best scheme is here: ./analysis/best_scheme.txt
+INFO     | 2021-12-16 16:36:33,251 | model_util |    
+INFO     | 2021-12-16 16:36:33,251 | model_util |    
+INFO     | 2021-12-16 16:36:33,251 | model_util |    *Citations for this analysis*
+INFO     | 2021-12-16 16:36:33,251 | model_util |    -----------------------------
+INFO     | 2021-12-16 16:36:33,251 | model_util |    
+INFO     | 2021-12-16 16:36:33,251 | model_util |    If you use this analysis in your published work, please cite the following papers on which your analysis relied.
+INFO     | 2021-12-16 16:36:33,268 | model_util |    
+INFO     | 2021-12-16 16:36:33,268 | model_util |    For the version of PartitionFinder you used, please cite:
+INFO     | 2021-12-16 16:36:33,268 | model_util |    Lanfear, R., Frandsen, P. B., Wright, A. M., Senfeld, T., Calcott, B. (2016) PartitionFinder 2: new methods for selecting partitioned models of evolution formolecular and morphological phylogenetic analyses. Molecular biology and evolution. DOI: dx.doi.org/10.1093/molbev/msw260
+INFO     | 2021-12-16 16:36:33,268 | model_util |    
+INFO     | 2021-12-16 16:36:33,268 | model_util |    For the greedy algorithm you used, please cite:
+INFO     | 2021-12-16 16:36:33,268 | model_util |    Lanfear, R., Calcott, B., Ho, S. Y., & Guindon, S. (2012). PartitionFinder: combined selection of partitioning schemes and substitution models for phylogenetic analyses. Molecular biology and evolution, 29(6), 1695-1701.
+INFO     | 2021-12-16 16:36:33,269 | model_util |    
+INFO     | 2021-12-16 16:36:33,269 | model_util |    Your analysis also used PhyML, so please cite:
+INFO     | 2021-12-16 16:36:33,269 | model_util |    Guindon, S., Dufayard, J. F., Lefort, V., Anisimova, M., Hordijk, W., & Gascuel, O. (2010). New algorithms and methods to estimate maximum-likelihood phylogenies: assessing the performance of PhyML 3.0. Systematic biology, 59(3), 307-321.
+INFO     | 2021-12-16 16:36:33,269 | model_util |    
+INFO     | 2021-12-16 16:36:33,279 | main       | Total processing time: 0:10:13 (h:m:s)
+INFO     | 2021-12-16 16:36:33,280 | main       | Processing complete.

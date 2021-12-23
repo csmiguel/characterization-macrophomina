@@ -1,0 +1,11 @@
+/etc
+!/etc/Poudel_2021_Macrophomina.pdf
+/test
+/manuscript
+/output
+.R*
+*DS_Store
+*.log
+*.trees
+data/intermediate/beast/concat_*.trees
+data/intermediate/beast/concat_chain1.trees
