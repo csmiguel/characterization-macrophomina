@@ -1,4 +1,11 @@
-
+###.............................................................................
+# (c) Miguel Camacho Sánchez
+# miguelcamachosanchez@gmail.com // miguelcamachosanchez.weebly.com
+# https://scholar.google.co.uk/citations?user=1M02-S4AAAAJ&hl=en
+# March 2021
+#GOAL: Mann Whitney U test
+#PROJECT: characterization-macrophomina
+###.............................................................................
 library(tidyverse)
 library(reshape2)
 library(officer)

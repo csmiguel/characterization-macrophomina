@@ -1,4 +1,11 @@
-# Mann Whitney U test
+###.............................................................................
+# (c) Miguel Camacho Sánchez
+# miguelcamachosanchez@gmail.com // miguelcamachosanchez.weebly.com
+# https://scholar.google.co.uk/citations?user=1M02-S4AAAAJ&hl=en
+# March 2021
+#GOAL: Mann Whitney U test
+#PROJECT: characterization-macrophomina
+###.............................................................................
 library(dplyr)
 
 h <-
@@ -43,8 +50,6 @@ diff_d1 <-
 
 diff_d2 <-
   dplyr::filter(d2, strawberry == 1) %>%
-dplyr::pull(severity) %>% mean() - 
+dplyr::pull(severity) %>% mean() -
   dplyr::filter(d2, strawberry == 0) %>%
 dplyr::pull(severity) %>% mean()
-
-

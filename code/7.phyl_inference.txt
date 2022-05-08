@@ -1,4 +1,13 @@
+###.............................................................................
+# (c) Miguel Camacho Sánchez
+# miguelcamachosanchez@gmail.com // miguelcamachosanchez.weebly.com
+# https://scholar.google.co.uk/citations?user=1M02-S4AAAAJ&hl=en
+# March 2021
+#GOAL: Mann Whitney U test
+#PROJECT: characterization-macrophomina
+###.............................................................................
 #concatenate dna alignments
+
 /Applications/AMAS.py concat -f phylip -d dna -i data/intermediate/*ind.phy \
   -p data/intermediate/part -t data/intermediate/concat.phy -u phylip
 
