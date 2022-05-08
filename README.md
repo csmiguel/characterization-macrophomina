@@ -1,3 +1,6 @@
+
+[![DOI](https://zenodo.org/badge/441181151.svg)](https://zenodo.org/badge/latestdoi/441181151)
+
 Data and code for:
 
 Josefina Viejobueno, Berta de los Santos, Miguel Camacho-Sanchez, Ana Aguado, María Camacho, Sergio Miguel Salazar (2022) **Phenotypic Variability and Genetic Diversity of the Pathogenic Fungus _Macrophomina phaseolina_ from Several Hosts and Host Specialization in Strawberry**. Current Microbiology. https://doi.org/10.1007/s00284-022-02883-9
